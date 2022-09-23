@@ -1,8 +1,10 @@
 <h1>Catalog</h1>
 {{#if cars}}
+<ul>
 {{#each cars}}
-{{>carCard}}
+{{> carCard}}
 {{/each}}
+</ul>
 <ul>
     {{else}}
     <p>Catalog empty</p>
