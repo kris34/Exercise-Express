@@ -6,5 +6,37 @@
     "price": 4500,
     "year": 2007,
     "details": "exotic and reliable automobile"
+  },
+  {
+    "id": "asdf3880",
+    "brand": "Toyota ",
+    "model": "Avensis ",
+    "price": 5000,
+    "year": 2002,
+    "details": "Drakon"
+  },
+  {
+    "id": "asdf6193",
+    "brand": "Audi ",
+    "model": "A4",
+    "price": 12000,
+    "year": 2005,
+    "details": "Quattro, S-Line, 3.0 V6, Pushka"
+  },
+  {
+    "id": "asdf4225",
+    "brand": "VW",
+    "model": "Polo",
+    "price": 4000,
+    "year": 2002,
+    "details": "GTI"
+  },
+  {
+    "id": "asdf1805",
+    "brand": "VW ",
+    "model": "Golf MK 6",
+    "price": 23000,
+    "year": 2009,
+    "details": "Karbonov Kapak"
   }
 ]

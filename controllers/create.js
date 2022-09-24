@@ -1,4 +1,4 @@
-const { create } = require('express-handlebars');
+const create = require('../services/carService');
 
 const router = require('express').Router();
 
@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
-    const result = create(req.body);
+    const result = await create.createCar(req.body);
     res.redirect('/catalog/' + result.id);
   } catch (err) {
     res.render('create', {

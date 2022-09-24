@@ -5,7 +5,7 @@ const data = JSON.parse(fs.readFileSync(fileName));
 
 async function persist() {
   return new Promise((res, rej) => {
-    fs.writeFileSync(fileName, JSON.stringify(data), (err) => {
+    fs.writeFile(fileName, JSON.stringify(data, null, 2), (err) => {
       if (err == null) {
         res();
       } else {
@@ -45,5 +45,5 @@ function createId() {
 module.exports = {
   getById,
   createCar,
-  getAll
+  getAll,
 };

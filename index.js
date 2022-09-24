@@ -12,9 +12,11 @@ const createController = require('./controllers/create');
 
 app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
+app.use(express.urlencoded({ extended: true }));
+
 
 app.use(homeController);
-app.use('/catalog', catalogController);
+app.use('/catalog/', catalogController);
 app.use('/create', createController);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
